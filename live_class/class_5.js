@@ -30,11 +30,22 @@
 // person.name = 'jyoti';
 // console.log(person);
 
-let person = function (firstName, courseCount) {
-    this.firstName = firstName;
-    this.courseCount = courseCount;
-}
-let student1 = new person("jyoti", 10);
-console.log(student1)
-let student2 = new person("roshni", 20);
-console.log(student2)
+// let person = function (firstName, courseCount) {
+//     this.firstName = firstName;
+//     this.courseCount = courseCount;
+// }
+// let student1 = new person("jyoti", 10);
+// console.log(student1)
+// let student2 = new person("roshni", 20);
+// console.log(student2);
+
+//  set----->
+// let i = [1, 3, 4, 5, 6, 3, 2, 67, 5, 34, 6, 4, 3, 5];
+// let num = new Set(i);
+// console.log(num);
+// for (let i of num) {
+//     console.log(i);
+// }
+
+
+// map--->
