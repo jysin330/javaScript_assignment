@@ -39,11 +39,54 @@
 
 // set and map---->
 // set will nly have unique value--->
-let a = [1, 2, 3, 4, 5, 6, 32, 5, 63, 2, 21, 1];
-let num = new Set(a);
-console.log(num);
-for (let i of num) {
-    console.log(i);
-}
-//   map----->
+// let a = [1, 2, 3, 4, 5, 6, 32, 5, 63, 2, 21, 1];
+// let num = new Set(a);
+// console.log(num);
+// for (let i of num) {
+//     console.log(i);
+// }
 
+
+//   map----->
+// getter and setter
+// let value = new Map();
+// value.set("hello", "world");
+// value.set(10, "hello");
+// value.set(true, "bye-bye")
+// console.log(value);
+
+
+// let cont = [
+//     ["india", "delhi"],
+//     ["gujrat", "surat"],
+//     ["raj", "jaipur"]
+// ]
+// let city = new Map(cont);
+// console.log(city);
+// console.log(city.get("india"))
+// for (let key of city) {
+//     console.log(key.keys)
+// }
+
+// closure --->
+//  when an inner function is accessing variable of the outer function is called closure.
+// function outer() {
+//     let vari = "jyoti";
+//     function inner() {
+//         console.log(vari);
+//     }
+//     inner();
+
+// }
+// outer();
+function outer() {
+    let vari = "jyoti";
+    function inner() {
+        console.log(vari);
+    }
+    return inner;
+
+}
+let var2 = outer();
+var2();
+console.log(var2())
